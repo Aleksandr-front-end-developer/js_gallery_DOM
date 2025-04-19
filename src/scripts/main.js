@@ -9,7 +9,8 @@ linkAll.forEach((item) => {
 
 function gallaryImages(e) {
   e.preventDefault();
-  const clone = e.target.cloneNode(true);
+
+  const clone = e.currentTarget.querySelector('img').cloneNode(true);
 
   clone.classList.remove('gallery__thumb');
   clone.classList.add('gallery__large-img');
